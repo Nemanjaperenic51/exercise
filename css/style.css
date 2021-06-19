@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+:root {
+    --primary: #6b58ff;
+    --accents: #01fdfe;
+    --white: #fff;
+    --black: #000;
+    --fontSize: 16px;
+    --fontFamily: 'Source Sans Pro', sans-serif;
+    --textShadow: 0 0 2px var(--black);
+    --transition: .3s ease;
+}
+/**************
+basic styles
+**************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    line-height: 1.5;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+/**************
+header
+**************/
+header {
+    background-image: url(../slike/header.jpg);
+    height: 70vh;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+nav {
+  padding: 20px 70px;
+}
+
+nav ul li  {
+  list-style: none;
+  display: inline-block;
+  justify-content: space-between;
+  float: inline-end;
+   margin-left: 50px;
+} 
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  /* margin-left: 20px; */
+}
+h1 {
+    color: var(--white);
+    font-size: 5rem;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+}
+/**************
+footer
+**************/
+footer {
+    background-image: url(../slike/footer.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+footer p{
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 0 0 4px black;
+  line-height: 1.5;
+}
+
+
+ .tabovi {
+  padding: 100px 0;
+} 
+ .linkovi a{
+  color: var(--primary);
+  font-size: 2rem;
+  margin: 0 10px;
+  border-bottom: 2px solid var(--primary);
+  text-decoration: none;
+  width: 300px; 
+  /* da bi mogo da im stavim sirinu moram da stavim display inline-block */
+   display: inline-block;
+  cursor: pointer;
+}
+
+.linkovi a:hover {
+  color: var(--accents);
+  text-shadow: 0px 0 2px black;
+  transition: .3s ease;
+  border-bottom: 2px solid var(--accents);
+} 
+
+ .linkovi {
+  text-align: center;
+  
+}
+.prikaz {
+  display: flex; 
+   /* kad sam stavio display flex otislo je jedno pored drugog a ne jedan ispod drugog */ 
+   justify-content: space-between;
+} 
+ 
+.prikaz .col-2 {
+  flex: 2; 
+   /* kad sam stavio ovo slika se smanjila  */
+flex: 0 0 68%;
+  margin-top: 50px;
+  align-items: center; 
+  display: flex; 
+   flex-direction: column;
+} 
+ .prikaz .col-1 {
+  flex: 1; 
+  /* kad sam stavio ovo slika se smanjila */
+   margin-top: 50px;
+  flex: 0 0 28%;
+}
+.prikaz .col-1 img{
+  width: 100%;
+}
+
+.prikaz h2 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.prikaz hr {
+  margin: 20px 0 30px 0;
+  height: 2px;
+  background: linear-gradient(to left, var(--primary), var(--accents));
+  border: none;
+} 
+ 
+.prikaz button {
+  padding: 10px 20px;
+  background:  linear-gradient(to right, var(--primary), var(--accents));
+  border: none;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: .5s ease;
+  text-shadow: 0 0 2px black;
+  border-radius: 20px;
+}
+
+.prikaz button:hover {
+  background: linear-gradient(to left, var(--primary), var(--accents));
+
+} 
+
+
+/* 1:07:00 */
+
+#phpView, #phpViewImg, #wpView, #wpViewImg {
+  display: none;
+}
